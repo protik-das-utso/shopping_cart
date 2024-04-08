@@ -3,6 +3,7 @@ let add_cart = document.querySelectorAll(".add-cart-btn");
 let totalPrice = 0;
 let ui = new UI();
 
+// Add to Cart
 add_cart.forEach((button) => {
     button.addEventListener("click", () => {
         let pName = button
@@ -16,30 +17,8 @@ add_cart.forEach((button) => {
         mainPrice = parseInt(dollorPrice);
         totalPrice += mainPrice;
 
-        console.log("Before", totalPrice);
-
+        // Show letest Price
         ui.showCart(pName, price);
         ui.showPrice(totalPrice);
     });
 });
-
-function item_remove() {
-    let remove_btn = document.querySelectorAll(".remove-btn");
-
-    remove_btn.forEach((remove) => {
-        remove.addEventListener("click", () => {
-            let cartItem = remove.closest(".delete-item");
-            if (cartItem) {
-                let priceText = cartItem.querySelector(".price").textContent;
-                let removeMainPrice = parseInt(priceText.replace("$", ""));
-                totalPrice -= removeMainPrice;
-
-                console.log("After", totalPrice);
-                console.log(cartItem);
-                cartItem.remove();
-                delete cartItem;
-                ui.showPrice(totalPrice);
-            }
-        });
-    });
-}
