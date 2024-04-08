@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/512/5566/5566915.png" type="image/x-icon">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <!-- products list -->
+    <!--    ==>> Price -->
+    <!--    ==>> Add to Cart -->
+    <!-- Cart left or bottom -->
+
+    <div class="container mx-auto p-3">
+        <!-- head v=bar -->
+        <header class="flex justify-between bg-blue-200 p-3 items-center">
+            <h4 class="text-2xl font-bold">JS Shop</h4>
+            <div class="">
+                <ul class="flex space-x-10 items-center">
+                    <li class="">Home</li>
+                    <li>All Products</li>
+                    <li>Contact</li>
+                    <li
+                        class="bg-blue-300 text-white p-2 px-4 rounded-full cursor-pointer hover:text-black hover:bg-white transition-colors duration-300">
+                        Shop Now</li>
+                </ul>
+            </div>
+        </header>
+        <main class="grid lg:grid-cols-3 md:grid-cols-3 gap-10 gap-10 sm:grid-cols-1">
+            <!-- products list -->
+            <div class="w-full lg:col-span-2 md:col-span-2 pt-5 sm:col-span-1">
+                <p class="w-full text-center text-xl font-bold pt-2 pb-5">Products List</p>
+                <hr>
+                <ul class="divide-y-2">
+                    <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
+                        <p class="product-name pl-3">1 Wiseless Earbuds</p>
+                        <div class="flex space-x-4 items-center">
+                            <p class="price font-bold">$1200</p>
+                            <button type="submit"
+                                class="add-cart-btn p-3 bg-indigo-200 rounded hover:bg-indigo-400 hover:text-white transition-colors duration-300">Add
+                                to
+                                Cart</button>
+                        </div>
+                    </li>
+                    <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
+                        <p class="product-name pl-3">2 Wiseless Earbuds</p>
+                        <div class="flex space-x-4 items-center">
+                            <p class="price font-bold">$1200</p>
+                            <button type="submit"
+                                class="add-cart-btn p-3 bg-indigo-200 rounded hover:bg-indigo-400 hover:text-white transition-colors duration-300">Add
+                                to
+                                Cart</button>
+                        </div>
+                    </li>
+                    <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
+                        <p class="product-name pl-3">3 Wiseless Earbuds</p>
+                        <div class="flex space-x-4 items-center">
+                            <p class="price font-bold">$100</p>
+                            <button type="submit"
+                                class="add-cart-btn p-3 bg-indigo-200 rounded hover:bg-indigo-400 hover:text-white transition-colors duration-300">Add
+                                to
+                                Cart</button>
+                        </div>
+                    </li>
+                    <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
+                        <p class="product-name pl-3">4 Wiseless Earbuds</p>
+                        <div class="flex space-x-4 items-center">
+                            <p class="price font-bold">$2200</p>
+                            <button type="submit"
+                                class="add-cart-btn p-3 bg-indigo-200 rounded hover:bg-indigo-400 hover:text-white transition-colors duration-300">Add
+                                to
+                                Cart</button>
+                        </div>
+                    </li>
+                    <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
+                        <p class="product-name pl-3">4 Wiseless Earbuds</p>
+                        <div class="flex space-x-4 items-center">
+                            <p class="price font-bold">$10</p>
+                            <button type="submit"
+                                class="add-cart-btn p-3 bg-indigo-200 rounded hover:bg-indigo-400 hover:text-white transition-colors duration-300">Add
+                                to
+                                Cart</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- cart option -->
+            <div class="w-full col-span-1 pt-5 sm:col-span-1">
+                <p class="w-full text-center text-xl font-bold pt-2 pb-5">Cart Option</p>
+                <div class="bg-green-100 max-h-72 overflow-y-auto">
+                    <ul class="cart-list ">
+
+                    </ul>
+                    <!-- <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
+                        <p class="product-name pl-3">Wiseless Earbuds</p>
+                        <div class="flex space-x-4 items-center">
+                            <p class="price font-bold">$1200</p>
+                        </div>
+                    </li> -->
+                </div>
+                <hr>
+                <div class="flex flex-row justify-between">
+                    <p class="text-lg font-bold">Total Price : </p>
+                    <p class="total-price">$0</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="./js/ui.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
