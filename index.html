@@ -6,18 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind CSS Link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/512/5566/5566915.png" type="image/x-icon">
     <title>Shopping Cart</title>
 </head>
 
 <body>
-    <!-- products list -->
-    <!--    ==>> Price -->
-    <!--    ==>> Add to Cart -->
-    <!-- Cart left or bottom -->
-
     <div class="container mx-auto p-3">
-        <!-- head v=bar -->
+        <!-- head bar -->
         <header class="flex justify-between bg-blue-200 p-3 items-center">
             <h4 class="text-2xl font-bold">JS Shop</h4>
             <div class="">
@@ -31,14 +27,17 @@
                 </ul>
             </div>
         </header>
+
+        <!-- Hero Bar -->
         <main class="grid lg:grid-cols-3 md:grid-cols-3 gap-10 gap-10 sm:grid-cols-1">
             <!-- products list -->
             <div class="w-full lg:col-span-2 md:col-span-2 pt-5 sm:col-span-1">
                 <p class="w-full text-center text-xl font-bold pt-2 pb-5">Products List</p>
                 <hr>
                 <ul class="divide-y-2">
+                    <!-- 1st product -->
                     <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
-                        <p class="product-name pl-3">1 Wiseless Earbuds</p>
+                        <p class="product-name pl-3">Samsung Galaxy Book</p>
                         <div class="flex space-x-4 items-center">
                             <p class="price font-bold">$1200</p>
                             <button type="submit"
@@ -47,28 +46,31 @@
                                 Cart</button>
                         </div>
                     </li>
+                    <!-- 2nd product -->
                     <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
-                        <p class="product-name pl-3">2 Wiseless Earbuds</p>
+                        <p class="product-name pl-3">HP Envy x360</p>
                         <div class="flex space-x-4 items-center">
-                            <p class="price font-bold">$1200</p>
+                            <p class="price font-bold">$1100</p>
                             <button type="submit"
                                 class="add-cart-btn p-3 bg-indigo-200 rounded hover:bg-indigo-400 hover:text-white transition-colors duration-300">Add
                                 to
                                 Cart</button>
                         </div>
                     </li>
+                    <!-- 3rd product -->
                     <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
-                        <p class="product-name pl-3">3 Wiseless Earbuds</p>
+                        <p class="product-name pl-3">Lenovo Legion</p>
                         <div class="flex space-x-4 items-center">
-                            <p class="price font-bold">$100</p>
+                            <p class="price font-bold">$900</p>
                             <button type="submit"
                                 class="add-cart-btn p-3 bg-indigo-200 rounded hover:bg-indigo-400 hover:text-white transition-colors duration-300">Add
                                 to
                                 Cart</button>
                         </div>
                     </li>
+                    <!-- 4th product -->
                     <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
-                        <p class="product-name pl-3">4 Wiseless Earbuds</p>
+                        <p class="product-name pl-3">Dell XPS</p>
                         <div class="flex space-x-4 items-center">
                             <p class="price font-bold">$2200</p>
                             <button type="submit"
@@ -77,10 +79,11 @@
                                 Cart</button>
                         </div>
                     </li>
+                    <!-- 5th product -->
                     <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
-                        <p class="product-name pl-3">4 Wiseless Earbuds</p>
+                        <p class="product-name pl-3">Asus Vivobook</p>
                         <div class="flex space-x-4 items-center">
-                            <p class="price font-bold">$10</p>
+                            <p class="price font-bold">$1800</p>
                             <button type="submit"
                                 class="add-cart-btn p-3 bg-indigo-200 rounded hover:bg-indigo-400 hover:text-white transition-colors duration-300">Add
                                 to
@@ -89,31 +92,42 @@
                     </li>
                 </ul>
             </div>
+
             <!-- cart option -->
             <div class="w-full col-span-1 pt-5 sm:col-span-1">
                 <p class="w-full text-center text-xl font-bold pt-2 pb-5">Cart Option</p>
-                <div class="bg-green-100 max-h-72 overflow-y-auto">
+                <div class="bg-green-100 max-h-96 overflow-y-auto">
                     <ul class="cart-list ">
 
                     </ul>
-                    <!-- <li class="all-item flex justify-between bg-gray-100 p-2 py-3 items-center">
-                        <p class="product-name pl-3">Wiseless Earbuds</p>
-                        <div class="flex space-x-4 items-center">
-                            <p class="price font-bold">$1200</p>
-                        </div>
-                    </li> -->
+                    <!-- After adding the product to the cart -->
+                    <!-- <li class="delete-item flex justify-between bg-gray-100 p-2 py-3 items-center">
+                            <p class="product-name pl-3">Wiseless Earbuds</p>
+                            <div class="flex space-x-4 items-center">
+                                <p class="price font-bold">$1200</p>
+                                <button type="button" class="remove-btn text-red-600 font-bold">X</button>
+                            </div>
+                        </li> -->
                 </div>
                 <hr>
-                <div class="flex flex-row justify-between">
+                <!-- Total Price Shown Section -->
+                <div class="price-section flex flex-row justify-between hidden px-2 pt-2">
                     <p class="text-lg font-bold">Total Price : </p>
-                    <p class="total-price">$0</p>
+                    <p class="total-price text-lg font-bold text-red-600">0</p>
+                </div>
+                <!-- No item in cart (pic show) -->
+                <div class="no-list-section active">
+                    <img src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-2130356-1800917.png?f=webp"
+                        alt="cart-empty">
                 </div>
             </div>
         </main>
     </div>
 
 
+    <!-- UI Class Script -->
     <script src="./js/ui.js"></script>
+    <!-- Main Script -->
     <script src="./js/script.js"></script>
 </body>
 
